@@ -10,3 +10,13 @@ function pow(){
 }
 var result = pow();
 console.log(result);
+
+// -----------------Сумма чисел кратных 3----------------------
+var result = 0;
+for (x = 1; x <= 100; x++) {
+    if (x % 3 === 0){
+     result += x;
+    } 
+}
+
+console.log(result)
