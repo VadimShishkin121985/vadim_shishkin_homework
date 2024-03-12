@@ -18,5 +18,20 @@ for (x = 1; x <= 100; x++) {
      result += x;
     } 
 }
-
 console.log(result)
+
+//----------------------Елочка---------------------------------
+
+function drawTriangle(height, symbol) {
+    var i;
+    for (i = 1; i <= height; i++) {
+        var row = '';
+        var j;    
+        for (j = 0; j < i; j++) {
+            row += symbol;
+        }
+        console.log(row);
+    }
+}
+
+drawTriangle(20, '*');
