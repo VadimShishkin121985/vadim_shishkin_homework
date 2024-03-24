@@ -32,4 +32,19 @@ function generateRandomNumbers(count) {
 
 generateRandomNumbers(100);
 
-//------
+//------Свій padEnd/padStart---------------
+
+
+function pad(string, char, length, isStart) {
+    let padding = '';
+    for (let i = 0; i < length - string.length; i++) {
+        padding += char;
+    }
+    return isStart ? padding + string : string + padding;
+}
+
+let result = pad('simple', '+', 8, true);
+console.log(result);  
+
+result = pad('simple', '+', 8, false);
+console.log(result);  
