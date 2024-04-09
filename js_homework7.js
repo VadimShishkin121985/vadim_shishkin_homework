@@ -28,6 +28,13 @@ console.log(trustedemails);
 
 // ---------------- Без А -------------------------------
 
-const string = "fghkglka Aflghkfghk dfdfdafgfg AgdfgdfgdA Adfgghdgadfgdfg";
+const text = "fghkglka Aflghkfghk dafgfg AgdfgdfgdA Adfgghdgadfgdfg";
 
+const pattern = /(?:[^Aa]{6,})/g;
 
+const matches = text.match(pattern);
+
+console.log("Знайдені послідовності без літер 'А':");
+matches.forEach(match => {
+    console.log(match);
+});
